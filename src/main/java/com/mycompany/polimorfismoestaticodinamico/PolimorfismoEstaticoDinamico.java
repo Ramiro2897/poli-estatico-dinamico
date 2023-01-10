@@ -22,7 +22,7 @@ public class PolimorfismoEstaticoDinamico {
         //recorremos con un foreach
         for (Figura f : figuras) {
             f.calcularArea();
-            //el metodo esta sobreescrito en cada caso en donde se requira calcular el area
+            //el metodo esta sobreescrito en cada caso en donde se requiera calcular el area
             System.out.println("Area de la figura: " + f.getArea());
         }
         
@@ -34,7 +34,7 @@ public class PolimorfismoEstaticoDinamico {
         objetos.add(objeto1);
         objetos.add(objeto2);
         objetos.add(objeto3);
-        //recorremos y aplicamos un condicional done nos dice el tipo de objeto dsdo el caso o calcula el area
+        //recorremos y aplicamos un condicional donde nos dice el tipo de objeto dado el caso o calcula el area
         for (Object o : objetos) {
             if (o instanceof Figura) {
                 ((Figura) o).calcularArea();
